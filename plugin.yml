@@ -1,0 +1,15 @@
+name: PotionEffectPlaceholder
+version: 1.0
+author: Datatags
+main: me.datatags.potioneffectplaceholder.PotionEffectPlaceholder
+api-version: 1.13
+depend: [PlaceholderAPI]
+commands:
+    effects:
+        description: Displays the effects the sender has
+        usage: /<command>
+        permission: potioneffectplaceholder.effects
+permissions:
+    potioneffectplaceholder.effects:
+        description: Grants permission to use the /effects command
+        default: true
