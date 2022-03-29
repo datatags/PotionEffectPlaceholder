@@ -40,7 +40,7 @@ public class PotionEffectPlaceholder extends JavaPlugin {
             }
             time.add(String.valueOf((seconds % 3600) / 60));
             time.add(String.valueOf(seconds % 60));
-            player.sendMessage("- " + color + friendlyName(effect.getType()) + ": " + ChatColor.YELLOW + time.toString());
+            player.sendMessage("- " + color + friendlyName(effect.getType()) + " " + (effect.getAmplifier() + 1) + ": " + ChatColor.YELLOW + time.toString());
         }
         return true;
     }

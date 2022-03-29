@@ -40,6 +40,7 @@ public class PotionEffectPlaceholderExpansion extends PlaceholderExpansion {
         if (effects.size() > 1) {
             return "You have " + effects.size() + " Potion Effects, use /effects to display them.";
         }
-        return plugin.friendlyName(effects.iterator().next().getType());
+        PotionEffect effect = effects.iterator().next();
+        return plugin.friendlyName(effect.getType()) + (effect.getAmplifier() > 0 ? " " + effect.getAmplifier() + 1 : "");
     }
 }
